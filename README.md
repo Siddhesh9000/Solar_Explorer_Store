@@ -1,9 +1,10 @@
 # Solar System Store 🌌
 
+Live Here: [https://siddhesh9000.github.io/Solar_System_Store/)
+
 Welcome to the Solar System Store! This is a web application where users can explore information about different planets in our solar system and make purchases related to space exploration.
 
 ## Features
-
 - **Planet Information**: Learn about various planets in our solar system including Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.
 - **Dynamic Content**: When a user selects a planet, the application dynamically updates to display information and images related to the selected planet.
 - **Interactive Slideshow**: Users can navigate through multiple slides of information about each planet using an interactive slideshow.
