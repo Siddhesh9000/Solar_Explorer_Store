@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+}
+
+body {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    background-image: url('./assets/1773008.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #3a3838 ;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0 5px;
+    position: relative;
+}
+
+ul li a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+}
+
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 150px;
+    flex-wrap: wrap;
+}
+
+.merc {
+    max-width: 500px;
+    height: auto;
+    animation: rotateMoon 20s linear infinite;
+}
+
+.contentleft {
+    flex: 1;
+}
+
+.contentmid {
+    flex: 2;
+}
+
+.contentright {
+    flex: 1;
+    position: relative;
+}
+
+main h2 {
+    font-size: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+main p {
+    font-size: 14px;
+    font-weight: 200;
+    color: white;
+    line-height: 31.5px;
+    margin: 30px 0px;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: black;
+    background: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.logo img {
+    height: 50px; 
+    width: auto; 
+}
+
+.logo {
+    padding: 10px 5px;
+}
+
+.signup {
+    background-color: white;
+    color: black;
+}
+
+.signup:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Define the animation */
+@keyframes rotateMoon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    padding: 10px;
+    color: white;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: white;
+    box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.5); 
+}
+
+.planet-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.planet-dropdown h2 {
+    display: inline-block;
+}
+
+.planet-dropdown:hover .planet-options {
+    display: block;
+}
+
+.planet-options {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white; 
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 5px;
+}
+
+.planet-options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.planet-options ul li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.planet-options ul li:hover {
+    background-color: #333;
+}
+
+.planet-dropdown h2::after {
+    content: '\25BE'; 
+    margin-left: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" ><img src="./assets/Moon-Vector-PNG.png" alt="Logo"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#"> Offers </a>
+                    <ul>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Specials</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Buy Now </a>
+                    <ul>
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"> Sell Now </a>
+                </li>
+                <li>
+                    <a href="#"> About Us </a>
+                    <ul>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Mission</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="signup"> Sign Up </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contentleft">
+            <div class="planet-dropdown">
+                <h2 id="selectedPlanet">Mercury</h2> 
+                <div class="planet-options">
+                    <ul>
+                        <li onclick="selectPlanet('Mercury')">Mercury</li>
+                        <li onclick="selectPlanet('Venus')">Venus</li>
+                        <li onclick="selectPlanet('Earth')">Earth</li>
+                        <li onclick="selectPlanet('Mars')">Mars</li>
+                        <li onclick="selectPlanet('Jupiter')">Jupiter</li>
+                        <li onclick="selectPlanet('Saturn')">Saturn</li>
+                        <li onclick="selectPlanet('Uranus')">Uranus</li>
+                        <li onclick="selectPlanet('Neptune')">Neptune</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contentmid">
+            <div class="slideshow-container">
+                <div class="slides">
+                    <p id="planetInfo1" class="slide">Mercury is the smallest planet in the Solar System and the closest to the Sun. It is named after the Roman deity Mercury, the messenger of the gods. Mercury's surface appears heavily cratered and is similar in appearance to Earth's Moon, indicating that it has been geologically inactive for billions of years.</p>
+                    <p id="planetInfo2" class="slide">Mercury is one of the four terrestrial planets in the Solar System, and it has a rocky body like the Earth. Its orbit around the Sun takes 88 Earth days, which is shorter than any other planet in the Solar System.</p>
+                </div>
+                <div class="dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <button class="btn">Buy Now</button>
+        </div>
+        <div class="contentright">
+            <div class="contentright">
+                <img src="About.png" class="merc" id="moon">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
