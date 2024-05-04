@@ -1,6 +1,6 @@
 # Solar System Store 🌌
 
-Live Here: [https://siddhesh9000.github.io/Solar_System_Store/)
+Live Here: [Solar System Store](https://siddhesh9000.github.io/Solar_System_Store/)
 
 Welcome to the Solar System Store! This is a web application where users can explore information about different planets in our solar system and make purchases related to space exploration.
 
